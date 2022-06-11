@@ -1,0 +1,124 @@
+:root {
+    --color-principal: #ec7878;
+    --color-principal-claro: #fcccd4;
+    --color-principal-claro-a: #fcccd4b6;
+    --color-principal-claro-2: #fefafb;
+    --color-secundario:#935354;
+    --color-secundario-claro:#d49cbc;
+    --color-secundario-a:#93535471;
+    --color-secundario-claro-a:#d49cbc71;
+    --color-enfasis-1:#741010;
+    --color-enfasis-2:#493a3c;
+    --color-blanco: #fff;
+  }
+
+body{
+    background-color: var(--color-principal-claro-2);
+}
+
+/* navbar */
+.bg-rosa{
+    background-color: var(--color-principal-claro-a)
+}
+
+/*Mensajes */ 
+.chat{
+    background-color: var(--color-principal-claro-a);
+    border-radius: 50px;
+}
+
+.servermsg{
+    width: 100%;
+    color: var(--color-enfasis-2);
+}
+
+.chat > span{
+    color: var(--color-enfasis-2);
+    font-size: medium;
+}
+
+
+
+.msg-enviado{
+    color: var(--color-blanco);
+    background-color: var(--color-secundario-claro-a);
+    margin-left: 60% !important;
+
+}
+
+.msg-recibido{
+    color: var(--color-blanco);
+    background-color: var(--color-secundario-a);
+
+}
+
+.msg-enviado, .msg-recibido {
+    max-width: 40%;
+    font-size: large;
+}
+
+.msg-enviado> span, .msg-recibido > span{
+    color: var(--color-enfasis-1);
+}
+
+.msg-enviado > *, .msg-recibido > * {
+    display: block;
+
+}
+
+#msgbox{
+    width: 100%;
+    height: 60vh;
+    background-color: var(--color-principal-claro);
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-color: var(--color-principal-claro-a) var(--color-secundario);
+    scrollbar-width: 10px;
+
+}
+
+/* Rooms */
+
+.contenedor-salas{
+    background-color: var(--color-principal-claro-a);
+    border-radius: 50px;
+    overflow-y: auto;
+    width: 30vw;
+    height: 50vh;
+}
+
+ .canalbtn{
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: var(--color-enfasis-2);
+    font-size: large;
+}
+
+
+
+#room_list > li{
+    list-style: none;
+}
+
+#room_list {
+    max-height: 25vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+.navbar-rosa{
+    background-color:#F5B7B1 !important;
+}
+
+.stickermsg{
+    width: 60%;
+}
+
+.stickers-container{
+    margin-top: 30px;
+}
+

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block titulo %}
+Inicio
+{% endblock titulo %}
+
+{% block sidebar %}
+
+<div class="contenedor-salas">
+    <div id="salas">
+        <h3 class="text-center mt-3">Canales~</h3>
+        <hr>
+        <ul id="room_list">
+            {% for sala in rooms %}
+            <li><button class="canalbtn" onclick="fusion('{{ sala }}'); return false;">#{{ sala }}</button></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <hr>
+    <div class="mx-2">
+        <form id="create_form" onsubmit="create(); return false">
+            <div class="input-group">
+                <input id="room_name" type="text" placeholder="Crea tu sala~" class="form-control">
+                <button type="submit" id="room" class="btn btn btn-outline-secondary">Crear~</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block body %}
+
+
+
+<div class="chat  p-4">
+    <p >Holi~ Bienvenido a la sala ~ </p>
+    <div class="chati bg-light">
+        
+        <div id="msgbox">
+
+        </div>
+        <form id="msg_form" onsubmit="enviarmsg(); return false;">
+            <div class="input-group ">
+                <input id="msgin" name="msgin" class="form-control" type="text" placeholder="Escriba un mensaje~">
+
+                <button type="submit" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-return-right"></i>
+                </button>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    onclick="traer_stickers();">
+                    <i class="bi bi-emoji-smile"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+
+{% endblock %}

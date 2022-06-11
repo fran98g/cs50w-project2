@@ -1,2 +1,17 @@
 Flask
 Flask-SocketIO
+bidict==0.22.0
+click==8.1.2
+colorama==0.4.4
+Flask==2.1.1
+Flask-SocketIO==5.1.1
+h11==0.13.0
+itsdangerous==2.1.2
+Jinja2==3.1.1
+MarkupSafe==2.1.1
+python-dotenv==0.20.0
+python-engineio==4.3.1
+python-socketio==5.5.2
+simple-websocket==0.5.2
+Werkzeug==2.1.1
+wsproto==1.1.0
